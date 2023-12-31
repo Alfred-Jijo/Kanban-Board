@@ -1,6 +1,6 @@
 # GoLang Kanban Project
 
-![GoLang Logo](https://github.com/rfyiamcool/golang_logo/blob/master/png/golang_20.png)
+![GoLang Logo](https://github.com/rfyiamcool/golang_logo/blob/master/gif/golang_color.gif)
 
 
 ## Introduction
