@@ -151,10 +151,16 @@ func (m *Model) initLists(width, height int) {
 	defaultList.SetShowHelp(false)
 	m.lists = []list.Model{defaultList, defaultList, defaultList}
 	m.lists[todo].Title = "To Do"
-	m.lists[todo].SetItems([]list.Item{})
+	m.lists[todo].SetItems([]list.Item{
+		Task{status: todo, title: "Eat Food", description: "Its fun"},
+	})
 
 	m.lists[inProgress].Title = "In Progress"
-	m.lists[inProgress].SetItems([]list.Item{})
+	m.lists[inProgress].SetItems([]list.Item{
+		Task{status: todo, title: "Crankin 90s", description: "Cooool"},
+	})
 	m.lists[done].Title = "Done"
-	m.lists[done].SetItems([]list.Item{})
+	m.lists[done].SetItems([]list.Item{
+		Task{status: todo, title: "Idk man", description: "Just cuz"},
+	})
 }
