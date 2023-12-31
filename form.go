@@ -66,3 +66,8 @@ func (f *Form) CreateTask() tea.Msg {
 	task := NewTask(f.focused, f.title.Value(), f.description.Value())
 	return task
 }
+
+func (f *Form) Reset() {
+	f.title.Reset()
+	f.description.Reset()
+}
